@@ -4,7 +4,7 @@
 #define  Min(x,y) (((x)<(y)) ? (x):(y))
 #define  Max(x,y) (((x)>(y)) ? (x):(y))
 
-#define  ASIZE(x) (sizeof(x)/sizeof(x[0]))
+#define  ASIZE(x) (sizeof(x)/sizeof(*x))
 
 // MAXPASSWORD is expected to be multiple of CRYPTPROTECTMEMORY_BLOCK_SIZE (16)
 // for CryptProtectMemory in SecPassword.
